@@ -1,3 +1,11 @@
+function init() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+function onDeviceReady() {
+    checkConnection();
+}
+
 function checkConnection() {
     var networkState = navigator.connection.type;
 
