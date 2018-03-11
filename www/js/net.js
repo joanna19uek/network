@@ -23,6 +23,6 @@ function checkConnection() {
         states[Connection.CELL_4G]  = 'Cell 4G connection';
         states[Connection.CELL]     = 'Cell generic connection';
 
-        document.getElementById('state').innerHTML = 'Your connection type: ' + states[networkState];
+        document.getElementById('state').innerHTML = 'Your connection type:<br>' + states[networkState];
     }
 }
