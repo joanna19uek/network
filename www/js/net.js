@@ -10,6 +10,7 @@ function checkConnection() {
     var networkState = navigator.connection.type;
 
     if (networkState === Connection.NONE) {
+        document.getElementById('state').innerHTML = null;
         document.getElementById('connected').innerHTML = 'You have no Internet connection :-(';
     } else {
         document.getElementById('connected').innerHTML = 'You are connected to the Internet :-)';
